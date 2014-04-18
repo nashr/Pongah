@@ -1,5 +1,14 @@
 #:kivy 1.8.0
 
 <PongahGame>:
+	canvas:
+		Rectangle:
+			source: root.sprite.player
+			size: 48, 48
+			pos: self.center_x - 24, self.center_y - 100
+
 	Label:
-		text: "Ini Home"
+		text: "PLAY"
+		font_size: 50
+		center_x: root.width / 2
+		center_y: root.height / 2
