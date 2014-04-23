@@ -6,4 +6,4 @@ class PongahGame(Widget):
 	sprite = Sprite()
 	
 	def update(self, dt):
-		self.sprite.update(dt)
+		pass #self.sprite.update(dt)
