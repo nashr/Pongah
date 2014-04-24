@@ -53,5 +53,8 @@ coverage.xml
 docs/_build/
 
 # Private Files -- added by myself
+raw/
 *.dpp
+*.tps
+*.tpsheet
 

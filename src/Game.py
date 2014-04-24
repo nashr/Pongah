@@ -1,9 +1,11 @@
+from kivy.properties import ObjectProperty
 from kivy.uix.widget import Widget
-from Sprite import *
+
+from Player import Player
 
 # Root of widgets
 class PongahGame(Widget):
-	sprite = Sprite()
+	player = ObjectProperty(None)
 	
 	def update(self, dt):
-		pass #self.sprite.update(dt)
+		self.player.update(dt)

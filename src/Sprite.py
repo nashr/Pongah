@@ -8,10 +8,9 @@ class Sprite():
 	imgdir = os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir)), "res", "img")
 	
 	# Directory of any other sprites
-	player = os.path.join(imgdir, "player.png")
+	player = os.path.join(imgdir, "Player.png")
+	tile = os.path.join(imgdir, "Tile.png")
 	
 	# Initialize textures
-	player_texture = Image(player).texture.get_region(0, 0, 48, 48)
-	
-	def update(self, dt):
-		pass
+	player_texture = Image(player).texture
+	tile_texture = Image(tile).texture
